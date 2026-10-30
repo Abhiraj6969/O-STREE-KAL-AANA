@@ -166,6 +166,28 @@ box-shadow:1px 1px 0 #3a3a3a,2px 2px 0 #303030,3px 3px 0 #262626,4px 4px 0 #1c1c
 #scare-sw[aria-pressed="false"] i{background:#000}
 #scare-sw[aria-pressed="false"] i::after{right:16px;background:#777}
 #scare-sw[aria-pressed="false"]{color:#999;border-color:#444}
+
+/* ===== PANDIT HELPLINE (Instagram) ===== */
+#pandit{padding:80px 0 90px}
+.seal{position:relative;max-width:760px;margin:0 auto;padding:46px 34px 36px;text-align:center;background:linear-gradient(180deg,var(--s2),var(--s1));border:1px solid #555;outline:1px solid #333;outline-offset:8px}
+.seal::before,.seal::after{content:"";position:absolute;width:22px;height:22px;border:2px solid #fff;pointer-events:none}
+.seal::before{top:-1px;left:-1px;border-right:0;border-bottom:0}
+.seal::after{bottom:-1px;right:-1px;border-left:0;border-top:0}
+.seal .stamp{display:inline-block;border:1px dashed #777;padding:2px 14px;font-size:13px;color:#bbb;letter-spacing:.12em;text-transform:uppercase;margin-bottom:18px}
+.seal h2{font-size:clamp(30px,5.4vw,54px);margin-bottom:10px}
+.seal h2 em{font-weight:500;color:#666}
+.seal .lead{margin:0 auto 30px;max-width:480px}
+.pandit-btn{position:relative;display:inline-flex;align-items:center;gap:14px;background:#fff;color:#000;text-decoration:none;padding:16px 30px 16px 22px;border:1px solid #fff;font:600 17px "Libre Franklin",sans-serif;box-shadow:6px 6px 0 #333;transition:transform .15s,box-shadow .15s,background .15s,color .15s}
+.pandit-btn svg{width:28px;height:28px;flex:none;display:block}
+.pandit-btn .h{font-family:"Special Elite","Courier New",monospace;font-size:19px;letter-spacing:.02em}
+.pandit-btn:hover{transform:translate(3px,3px);box-shadow:3px 3px 0 #555}
+.pandit-btn:active{transform:translate(6px,6px);box-shadow:0 0 0 #555}
+.pandit-btn::before{content:"";position:absolute;inset:-9px;border:1px solid #fff;opacity:0;animation:psp 2.6s infinite;pointer-events:none}
+@keyframes psp{from{transform:scale(.96);opacity:.7}to{transform:scale(1.06);opacity:0}}
+.seal .cap{margin:26px auto 0;max-width:460px;color:var(--mute);font-size:15px}
+.seal .cap b{color:var(--hi);font-weight:600}
+.seal .fine{margin-top:14px;font-size:12px;color:#555;letter-spacing:.06em}
+@media(max-width:520px){.seal{padding:38px 20px 30px;outline-offset:6px}.pandit-btn{padding:14px 20px 14px 16px;font-size:15px}.pandit-btn .h{font-size:16px}}
 </style>
 </head>
 <body>
@@ -305,6 +327,20 @@ box-shadow:1px 1px 0 #3a3a3a,2px 2px 0 #303030,3px 3px 0 #262626,4px 4px 0 #1c1c
     <button class="btn" type="submit">Submit report</button>
     <div class="msg" id="msg" role="status"></div>
   </form>
+</div></section>
+
+<section id="pandit"><div class="wrap">
+  <div class="seal rv">
+    <div class="stamp type">Emergency · Chanderi helpline</div>
+    <h2>Seen her yet? <em>Call the pandit.</em></h2>
+    <p class="lead">If the lamp post flickers, the door knocks twice and the writing on the wall says “O Stree, Kal Aana” &mdash; press below.</p>
+    <a class="pandit-btn" href="https://www.instagram.com/kapidhwaj.innovations/" target="_blank" rel="noopener noreferrer" aria-label="Open Instagram page @kapidhwaj.innovations in a new tab">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5.2"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg>
+      <span class="h">@kapidhwaj.innovations</span>
+    </a>
+    <p class="cap type">&#8595; <b>This button helps you locate your nearest pandit for exorcism.</b></p>
+    <div class="fine type">Results may vary. Do not knock back after dark.</div>
+  </div>
 </div></section>
 </main>
 
